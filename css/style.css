@@ -1,0 +1,205 @@
+/* ------------- UNIVERSAL ------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ------------- GENERAL ------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: -60px auto 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 1px 1px #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* ------------- HEADER ------------- */
+
+.main-header {
+    height: 500px;
+    text-align: center;
+    background:
+        linear-gradient(to top, #fff, transparent 5%),
+        #0f0 url(../img/mau5head.png) no-repeat center;
+    background-size: cover;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Arial Black', arial, sans-serif;
+    font-size: 5.5em;
+    letter-spacing: -0.625rem;
+}
+
+h2 {
+    margin-top: -70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000;
+}
+
+/* ------------- CONTENT ------------- */
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.primary-content {
+    font-size: 1.125rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #888;
+}
+
+#arrow {
+    width: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    background: black;
+}
+
+.secondary-content {
+    overflow: auto;
+    width: 100%;
+}
+
+.primary-content,
+.secondary-content {
+    border-bottom: 4px solid #888;
+    margin-bottom: 20px;
+    padding: 25px 30px;
+}
+
+.secondary-content p {
+    padding-top: 20px;
+}
+
+.music, 
+.tech {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.innerShadow {
+  box-shadow: inset 0 0 100px #000;
+  -moz-box-shadow: inset 0 0 100px #000;
+  -webkit-box-shadow: inset 0 0 100px #000;
+}
+
+.music .photo {
+  background: 
+      url('http://3.bp.blogspot.com/-HCHEYwin9No/ThscR4jel9I/AAAAAAAAA3I/F5ha62yuY7E/s400/deadmau-the-cube-.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.tech .photo {
+  background: url(https://pbs.twimg.com/profile_images/489655466855653376/R1NgRIN0_400x400.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+/* ------------- FOOTER ------------- */
+
+.main-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-footer img {
+    height: 30px;
+    width: 30px;
+}
+
+/* ------------- INTERACTIONS ------------- */
+
+a:hover {
+    color: #888;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 920px) {
+    .music, 
+    .tech {
+        float: none;
+        width: 80%;
+        margin: 5% 9%;
+    }
+    .secondary-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+    .main-header {
+        height: 400px;
+    }
+    .primary-content {
+        font-size: 1rem;
+    }
+    .secondary-content,
+    .main-footer {
+        font-size: 0.9rem;
+    }
+    .music,
+    .tech {
+        width: 90%;
+        margin: 2.5% 4.5%;
+    }
+}
+
+@media (max-width: 330px) {
+    h1 {
+        font-size: 4em;
+    }   
+    h2 {
+        padding-top: 15px;
+    }
+}
+
+
+
+
+
